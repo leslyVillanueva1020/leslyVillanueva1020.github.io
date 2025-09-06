@@ -162,3 +162,11 @@ ul {
     margin: 0 auto;
     text-align: center;
 }
+
+#form-frame {
+    width: 640px;
+    height:1008px;
+    border: none;        
+    margin: 0;           
+    display: block;
+}
