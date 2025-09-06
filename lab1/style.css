@@ -12,8 +12,6 @@ body{
   font-style: normal;
 }
 
-
-
 header {
     background-color: #235d65;
 }
@@ -156,7 +154,7 @@ ul {
 }
 
 .hobby{
-    color: rgb(253, 237, 171);
+    color: #057d79;
 }
 
 #content {
