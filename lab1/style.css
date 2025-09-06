@@ -1,0 +1,166 @@
+body{
+    background-color: #9DBEBB;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dynalight-regular {
+  font-family: "Dynalight", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+header {
+    background-color: #235d65;
+}
+
+h1 {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Dynalight";
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+hr {
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: beige;
+    padding: 1.3rem;
+}
+
+.navBar{
+    color: black;
+    background-color: #a3cac0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border: 3px solid rgb(56 88 73);
+    margin: 0 1em;
+    padding: 0.3em 0.3em;
+}
+
+.navBar:hover {
+    color: white;
+    background-color: #2c1846;
+    transition: .5s;
+}
+ 
+.imgContainer {
+    display:flex; 
+    justify-content:center;
+    margin-top: 2rem;
+    align-items: flex-start;
+    gap: 1 rem;
+}
+
+.teamImgs{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 3rem;
+    border: 5px solid rgb(56 88 73);
+}
+
+.figcap{
+    text-align:center;
+    font-size: 1em;
+}
+
+.imgbox{
+    text-align: center;
+    width:40%;
+}
+
+p{
+    margin: 0.5rem 0;
+}
+
+.text{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#quote{
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+} 
+
+footer {
+    margin: 0 auto;
+    background-color: #376e60;
+    color: #F4E9CD;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.footer-logo {
+    width: 200px;
+    max-width: 90vw;
+    height: auto;
+    margin-top: 1rem;
+}
+
+#experience {
+    border: 4px solid grey;
+}
+
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #396348;
+}
+
+.table-row {
+    background-color: #698c80;
+}
+
+#hobbies {
+    width: 500px;
+    margin: 5% auto;
+    text-align: left;
+}
+
+ul {
+    width:500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby{
+    color: rgb(253, 237, 171);
+}
+
+#content {
+    width: 640px;
+    margin: 0 auto;
+    text-align: center;
+}

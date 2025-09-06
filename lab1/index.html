@@ -3,49 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dynalight&family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Home</title>
 </head>
 <body>
-    
     <header>
-        <h1> Team 7 </h1>
+        <h1>Team Seven</h1>
     </header>
     <hr>
 
-    <a href="index.html" target="_blank">Home</a>
-    <a href="about.html" target="_blank">About</a>
-    <a href="contact.html" target="_blank">Contact</a>
-
-    <br>
-    <br> 
+    <nav>
+        <a class="navBar" href="index.html">Home</a>
+        <a class="navBar" href="about.html">About</a>
+        <a class="navBar" href="contact.html">Contact</a>
+    </nav> 
     
-    <img src="image/sungmin.jpg" width="900" height="1000" alt="Sungmin">
-    <br>
-    <br> Sungmin
-    <br>
-    <img src="image/lesly.jpg" width="900" height="1000" alt="Lesly">
-    <br>
-    <br> Lesly
-    <br>
-    <img src="image/alexander.jpg" width="900" height="1000" alt="Alexander">
-    <br>
-    <br> Alexander
-    <br>
-    <img src="image/eduardo.jpeg" width="900" height="1000" alt="Eduardo">
-    <br>
-    <br> Eduardo
-    <br> 
-    <p>Hello welcome to our CST336 Webpage! We hope you enjoy this class and our website.</p>
-    <br>
-    <p>“Time you enjoy wasting is not wasted time.” -Marthe Troly-Curtin, Phrynette Married</p>
+    <div class="imgContainer">
 
+            <figure class="imgbox">
+                <img class="teamImgs" src="image/sungmin.jpg" alt="Sungmin">
+                <figcaption class="figcap">
+                    Sungmin Park
+                </figcaption>
+            </figure>
+
+            <figure class="imgbox">
+                <img class="teamImgs" src="image/lesly.jpg">
+                <figcaption class="figcap">
+                    Lesly Villanueva
+                </figcaption>
+            </figure>
+
+            <figure class="imgbox">
+                <img class="teamImgs" src="image/alexander.jpg" alt="Alexander" >
+                <figcaption class="figcap">
+                    Alexander Trujillo
+                </figcaption>
+            </figure>
+
+            <figure class="imgbox">
+                <img class="teamImgs" src="image/eduardo.jpeg" alt="Eduardo">
+                <figcaption class="figcap">
+                    Eduardo Villagranao
+                </figcaption>
+            </figure>
+    </div>
+    <p class="text">Hello welcome to our CST336 Webpage! We hope you enjoy this class and our website.</p>
+    <br>
+    <p id="quote">“Time you enjoy wasting is not wasted time.”</p>
+    <p class="text">-Marthe Troly-Curtin, Phrynette Married</p>
+
+
+    <br>
     <hr>
+
     <footer>
         <p>CST336 Internet Programming. 2025© Park, Villanueva, Trujillo, Villarana </p>
         <p><strong>Disclaimer:</strong> The information in this webpage is fictitious.</p>
         <p>It is used for academic purposes only.</p>
-        <img src="image/csumb_logo.png" width="900" height="300" alt="CSUMB Logo">
+    <img class="footer-logo" src="image/csumbLogo.png" alt="CSUMB Logo">
     </footer>
-
+    
+    
 </body>
 </html>
