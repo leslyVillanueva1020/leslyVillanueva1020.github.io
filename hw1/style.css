@@ -1,0 +1,115 @@
+body{
+    background-image: url(images/meadow.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #7f4f24;
+}
+
+#square{
+    border: 5px solid #b08968;
+    border-radius: 20px;
+    margin-top: 3em;
+}
+
+#heading {
+    background-image: url(images/green_pokadots.jpg);
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#caterpillar {
+    width:4em;
+    height: auto;
+    padding-left: 2em;
+}
+
+h1{
+    color: #ffedd8;
+    text-shadow: 
+        0 0 5px black,
+        0 0 10px black;
+}
+
+hr{
+    border: 1px solid #b08968;
+    border-radius: 10px;
+    margin: 0px;
+}
+
+#titleContainer {
+    display: flex;
+    align-items: stretch;
+}
+
+#spacer {
+    background-image: url(images/green_stripes.jpg);
+    background-size: cover;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#welcome {
+    font-size: 2em;
+}
+
+#appleCat {
+    width: 5em;
+    height: auto;
+}
+
+.title {
+    background-image: url(images/picnicBckgnd.jpg);
+    background-size: 50%;
+    width: 80%;
+    height: auto;
+}
+
+#search {
+    border: 1px solid #f2e8d0;
+    border-radius: 1em;
+    background-color: #f2e8d0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    margin: 1em auto; /*Centers it inside titleContainer*/
+    width:90%;
+}
+
+#infoContainer {
+    background-image: url(images/yellow_stripes.jpg);
+    background-size: 30%;
+    padding: 1em;
+    border-radius: 0 0 15px 15px;
+}
+
+#information {
+    background-color: #fef8ea;
+    padding: 1em;
+}
+
+nav {
+    text-align: center;
+    justify-content: space-between;
+    background-color: #fef8ea;
+    color: #7f4f24;
+    margin-top: 1em;
+}
+
+.navBar {
+    text-decoration: none;
+    border:3px solid #fef8ea;
+    border-radius: 15px 15px 0 0;
+    color: #7f4f24;
+    background-color: #fef8ea;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
