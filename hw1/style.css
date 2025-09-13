@@ -120,6 +120,8 @@ nav {
 
 mark{
     background-color: #ffa5ab;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #squished {
@@ -133,6 +135,10 @@ mark{
     height: auto;
     max-width: 50%;
     margin: 0 auto;
+}
+
+h3{
+    margin-top: 2em;
 }
 
 .pInfo {
@@ -155,6 +161,37 @@ mark{
     padding: 1em;
     cursor: pointer;
 }
+
+.imgContainer {
+    display:flex; 
+    justify-content:center;
+    margin-top: 2rem;
+    align-items: flex-start;
+    gap: 1 rem;
+}
+
+.typeDB{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 3rem;
+    border: 5px solid rgb(56 88 73);
+}
+
+.figcap{
+    text-align:left;
+}
+
+.imgbox{
+    text-align: center;
+    width:40%;
+}
+
 
 footer {
     text-align: center;
