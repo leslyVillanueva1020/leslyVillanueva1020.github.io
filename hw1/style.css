@@ -33,6 +33,7 @@ h1{
     color: #ffedd8;
     text-shadow: 
         0 0 5px black,
+        0 0 10px black,
         0 0 10px black;
 }
 
@@ -67,7 +68,7 @@ hr{
 
 .title {
     background-image: url(images/picnicBckgnd.jpg);
-    background-size: 50%;
+    background-size: 20%;
     width: 80%;
     height: auto;
 }
@@ -88,7 +89,6 @@ hr{
     background-image: url(images/yellow_stripes.jpg);
     background-size: 30%;
     padding: 1em;
-    border-radius: 0 0 15px 15px;
 }
 
 #information {
@@ -97,11 +97,12 @@ hr{
 }
 
 nav {
+    display: flex;
     text-align: center;
-    justify-content: space-between;
-    background-color: #fef8ea;
+    justify-content: space-evenly;
     color: #7f4f24;
     margin-top: 1em;
+    font-size: 1.2em;
 }
 
 .navBar {
@@ -110,6 +111,61 @@ nav {
     border-radius: 15px 15px 0 0;
     color: #7f4f24;
     background-color: #fef8ea;
-    padding-top: 1em;
-    padding-bottom: 2em;
+    padding: 1em 2em;
+}
+
+.navBar i{
+    margin-left: 2em;
+}
+
+mark{
+    background-color: #ffa5ab;
+}
+
+#squished {
+    width: 86%;
+    margin: 1em auto;
+}
+
+#databaseImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.pInfo {
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 2px solid #b08968;
+    padding: 1em;
+}
+
+#infoBoxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+#infoBoxes details {
+    flex:1;
+    border: 2px solid #b08968;
+    padding: 1em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+}
+
+#footer {
+    background-image: url(images/red_pokadots.jpg);
+    background-size: 25%;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }

@@ -36,7 +36,7 @@
 
         <div id="infoContainer">
             <nav>
-                <a class="navBar" href="index.html">Understanding Databases
+                <a class="navBar" href="index.html"><mark>Understanding Databases</mark>
                     <i class="fa-solid fa-x"></i>
                 </a>
                 <a class="navBar" href="databaseModels.html">Database Models
@@ -49,12 +49,83 @@
                     <i class="fa-solid fa-x"></i>
                 </a>
             </nav>
+        
 
             <div id="information">
+                <div id="squished">
+                    <img id="databaseImg" src="images/database.png" alt="database image">
+                    <h3>Introduction to Databases:</h3>
+                    <p class="pInfo">A database, in simplest terms, is a collection of organized data. This data needs 
+                        to be accessed quickly and managed easily. If you use an Excel sheet to store data, 
+                        that's going to be a lot harder to manage, update, and share securely. Databases allow 
+                        us to do the same but with more efficiency. If you think about it, data is constantly being 
+                        stored from the messages you send on Instagram to the Google Docs file you created. Databases 
+                        are used in everyday systems such as banking, social media, hospitals, etc.
+                    </p>
+
+                    <h3>Key Features:</h3>
+                    <div id="infoBoxes">
+                        <details>
+                            <summary>Store Data Efficiently</summary>
+                            <p>Databases store information in tables, rows, and columns making it quickly and easily retrievable. Normalization, indexing, and compression
+                                redundancy are used to improve performance. Flat files or spreadsheets will usually repeat the same information without normalization to separate
+                                data. This is how databases improve efficiency and time. <br>
+                                <a href="https://blog.sdetools.io/database-design/?utm_source=chatgpt.com">Database Design: Optimizing Data Storage And Retrieval</a>
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>Data Integreity</summary>
+                            <p>Data integreity ensures that the data is accurate, complete, and consistent through the websites existence. Databases help ensure this through
+                                rules defined such as entity integrity which ensures that data isn't recorded multiple times or that no null enteries are submitted. Other rules
+                                such as referential and domain integrity which maintain the user's trust in the company's data integrity. <br>
+                                <a href="https://www.astera.com/type/blog/data-integrity-in-a-database/">What is Data Integrity in a Database? Why Do You Need It?</a>
+                        </details>
+
+                        <details>
+                            <summary>Easy Access & Queries</summary>
+                            <p>Quick searches, filters, updates to data, and analysis is possible through databases that use query languages like SQL. The features provided with
+                                query languages such as indexes, limit result set, and permissions make data retriving fast, controlled, and secure. This can help with tracking stock levels, 
+                                gain insight on information such as, low-stock items or in generating reports. <br>
+                                <a href="https://www.bluehost.com/blog/database-query-what-you-need-to-know/">Query Demystified: Everything You Need to Know About Database Queries and Their Importance</a>
+                            </p>
+                        </details>
+                    </div>
+
+                    <h3>Architectural Tiers of Databases:</h3>
+                    <p class="pInfo">When it comes to databases, there are different architectural tiers to databases which each have their advantages and disadvanatges.<br><br>
+                        <strong>First Tier:</strong> This is a database and an application hosted on a single server. 
+                        This is easy to set up, but not secure since the application and database communicate directly on the same server. If someone gets access to the server, they
+                        have access to the data and the application. <br> <br>
+                        <strong>Second Tier: </strong>A database that can support multiple applications running from it. There is a Client layer which contains tha application
+                        and a Server that contains the database. The database has its own dedicated server, but it still interacts directly with the client so 
+                        the system is still vulnerable to data leaks or attacks. <br> <br>
+                        <strong>Third Tier: </strong>A database, a server layer, and then the client layer (applications). This is the most common 
+                        because it provides stronger security as there is no direct communication to the database from the client. With this tier there is increased scalability 
+                        which means each tier can be scaled independently, and improved reliability. If one tier has an outage, it doesn't affect the working tiers. Since you can 
+                        develop each of these tiers separate from other tiers, it speeds up the time it would take to develop the overall database architecture.
+                        <br><br> 
+                        <a href="https://www.geeksforgeeks.org/dbms/dbms-architecture-2-level-3-level/">Read a more in depth analysis here!</a>
+                    </p>
+                    
+
+                </div>
             </div>
+
+            <footer>
+                &copy; 2025 Lesly Villanueva
+            </footer>
+
+        </div>
+        <hr>
+
+        <div id="footer">
+            <p>    </p>
         </div>
 
     </div>
+
+
     
 </body>
 </html>
