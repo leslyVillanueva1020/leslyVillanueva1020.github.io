@@ -52,6 +52,48 @@
             </nav>
 
             <div id="information">
+                <div id="squished">
+                    <h2>How Databases are Managed Efficiently: </h2>
+                    <p class="pInfo">Database Management Systems (DBMS) are essential software that do more than just store data: they ensure that data access is 
+                        efficient, safe, and consistent even under concurrent use or system failures
+                        <a href="https://www.intersystems.com/resources/what-is-a-database-management-system-dbms-the-backbone-of-modern-data-infrastructure/">[1]</a>. To accomplish this, DBMSs rely on fundamental properties like ACID 
+                        which define how transactions behave, enforce mechanisms for handling transactions (including commit and rollback), and apply tools such as indexing 
+                        and query optimization to improve performance while balancing costs. These features are what let DBMSs support large-scale applications with 
+                        reliability and speed <a href="https://us.ovhcloud.com/learn/what-is-dbms/">[2]</a>.
+                    </p>
+
+                    <img id="databaseImg" src="images/database-management-system.png" alt="Database Management System">
+
+                    <h3>ACID & Transactions</h3>
+                    <p class="pInfo">In database management systems there is the concept of transactions, which are units of work that must be executed reliably to keep 
+                        data accurate. Transactions follow the ACID properties—Atomicity, Consistency, Isolation, and Durability. These ensure that each transaction either 
+                        completes fully or not at all, keeps data in a valid state, remains unaffected by concurrent operations, and preserves results even after system 
+                        failures <a href="https://www.geeksforgeeks.org/dbms/acid-properties-in-dbms/" target="_blank">[3]</a>. Features like commit and rollback allow users to either save successful changes or undo faulty ones, helping maintain trust in the system. 
+                        Without these safeguards, databases would be prone to errors, corruption, and conflicts between users 
+                        <a href="https://www.rapydo.io/blog/understanding-atomicity-consistency-isolation-and-durability-acid-in-mysql">[4]</a>.
+                    </p>
+
+                    <h3>Indexing & Optimization</h3>
+                    <p class="pInfo">Efficiency in DBMSs also depends on how data is retrieved and processed. Indexing is a technique that creates shortcuts for the database 
+                        to quickly locate information without scanning entire tables, significantly speeding up queries<a href="https://www.geeksforgeeks.org/dbms/indexing-in-databases-set-1/" target="_blank">[5]</a>. However, indexes come with trade-offs: they require 
+                        extra storage space and can slow down updates since indexes must also be adjusted <a href="https://digma.ai/how-indexing-enhances-query-performance/" target="_blank">[6]</a>. 
+                        To further improve performance, query optimization techniques are used by the DBMS to determine the most efficient way to execute a request. These 
+                        features make databases scalable and responsive, ensuring that even complex applications can handle large datasets smoothly.
+                    </p>
+
+                    <div id="infoBoxes">
+                        <details>
+                        <summary>More resources used</summary>
+                        <p>
+                            <ul>
+                            <li><a href="https://www.mongodb.com/resources/basics/databases/acid-transactions" target="_blank">A Guide to ACID Properties in Database Management Systems</a></li>
+                            <li><a href="https://www.acceldata.io/blog/mastering-database-indexing-strategies-for-peak-performance" target="_blank">Mastering Database Indexing: Strategies for Peak Performance</a></li>
+                            <li><a href="https://www.xcubelabs.com/blog/product-engineering-blog/the-basics-of-database-indexing-and-optimization/" target="_blank">The Basics of Database Indexing and Optimization.</a></li>
+                            </ul>
+                        </p>
+                    </details>
+                    </div>
+                </div>
             </div>
 
             <footer>
