@@ -52,92 +52,93 @@
             </nav>
 
             <div id="information">
-                <h2>History of Database Models:</h2>
-                <p class="pInfo">The first widely used database was developed by IBM in the 1960s, called IMS (Information Management System). 
-                This was a hierarchical database, which means the data was organized in tree-like structures, but it lacked flexibility<a href="https://www.ibm.com/history/information-management-system?">[1]</a>. 
-                Then, in the 1970s, the relational model was developed by Edgar F. Codd. This model organized data into tables of rows and columns <a href="https://www.ibm.com/history/edgar-codd">[2]</a>. This is the foundation for SQL 
-                (Structured Query Language), also made by IBM, as it is a tool that interacts with relational models through commands to insert rows, create tables, 
-                run queries, etc <a href="https://en.wikipedia.org/wiki/SQL">[3]</a>. As time went on and the internet grew, so did the data, creating new approaches to handling data, such as NoSQL databases. Databases 
-                and the models have changed to fit different needs, so understanding the models will help you understand why certain databases are chosen for specific 
-                applications.
-                </p>
-
-                <h3>The Three Types of Databases:</h3>
-
-                <div class="imgContainer">
-                    <figure class="imgbox">
-                        <img class="typeDB" src="images/hierarchicalDB.jpg" alt="Hierarchical Database">
-                        <figcaption class="figcap">
-                            <h3>Hierarchical Database</h3>
-                            <p class="pInfo">The image above gives an idea of how a Hierarchical Database stores data, which is through parent nodes linked to child nodes. 
-                                Parents can have multiple child nodes, but child nodes only have one parent. This model was used to manage inventory and billing for NASA's 
-                                Apollo space program. However, this model became unpopular as data grew more complex because of the rigid tree structure, the difficulty of 
-                                updating, and the difficulty of querying. <br>
-                                <br> <a href="https://www.mongodb.com/resources/basics/databases/hierarchical-database" target="_blank">What is a Hierarchical Database?</a>
-                            </p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="imgbox">
-                        <img class="typeDB" src="images/relationalDB.jpg" alt="Relational Database">
-                        <figcaption class="figcap">
-                            <h3>Relational Database</h3>
-                            <p class="pInfo">A relational Database stores data into tables made up of rows and columns. The data can be stored on multiple tables and joined 
-                                together. These tables are defined using primary keys (unique identifiers) and foreign keys (links to keys in other tables). Here in the image, 
-                                we can see that the primary keys in Students is ID, in Courses it's ID, and in StudentCourses, the primary key is a combination (StudentID, 
-                                CourseID). The foreign keys in StudentCourses would be the Student.ID since it references Students (ID) and Course.ID since it references 
-                                Courses (ID). SQL helps interaction with relational databases to add, update, and delete rows more easily. These types of databases are still 
-                                commonly used today by business and web systems because of their flexibility for structured data. <br> <br>
-                                <a href="https://www.ibm.com/think/topics/relational-databases" target="_blank">What is a Relational Database?</a>
-                            </p>
-                        </figcaption>
-                    </figure>
-
-                    <figure class="imgbox">
-                        <img class="typeDB" src="images/NoSQL.jpg" alt="No SQL Database" >
-                        <figcaption class="figcap">
-                           <h3>No SQL Database</h3>
-                           <div id="noSQL" class="pInfo">
-                                <p>
-                                    NoSQL databases were created to handle situations where relational tables are too rigid, such as with big data (millions or billions of records), 
-                                    unstructured data (JSON documents, logs, social media posts, etc), or rapidly changing data. The models come in different types, just like the 
-                                    image shows:
-                                </p>
-
-                            <ul>
-                                    <li>Document databases like MongoDB store data in JSON-like documents.</li>
-                                    <li>Graph databases like Neo4j focus on relationships, used for social networks or recommendation systems. These models are flexible, 
-                                        scale easily, and work well with unstructured or massive amounts of data.
-                                    </li>
-                                    <li>Key-Value stores like Redis pair a unique key with a value, which allows for fast and direct key access due to its simplicity.</li>
-                                    <li>Column-oriented databases like Cassandra group data by columns instead of rows, making them great for big data.</li>
-                                </ul>
-
-                                <a href="https://www.geeksforgeeks.org/dbms/types-of-nosql-databases/" target="_blank">Types of NoSQL Databases</a>
-                           </div>
-
-                        </figcaption>
-                    </figure>
-                </div>
-
-
-
-                <div id="infoBoxes">
-                    <details>
-                    <summary>More resources used</summary>
-                    <p>
-                        <ul>
-                        <li><a href="https://www.quickbase.com/articles/timeline-of-database-history" target="_blank">Timeline of database History</a></li>
-                        <li><a href="https://www.geeksforgeeks.org/dbms/history-of-dbms/" target="_blank">History of DBMS</a></li>
-                        <li><a href="https://www.digitalocean.com/community/tutorials/understanding-relational-databases" target="_blank">Understanding Relational Databases</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Hierarchical_database_model" target="_blank">Heirarchical Database Model</a></li>
-                        <li><a href="https://www.thinkautomation.com/histories/the-history-of-databases" target="_blank">The History of Databases</a></li>
-                    
-                        </ul>
+                <div id="squished">
+                    <h2>History of Database Models:</h2>
+                    <p class="pInfo">The first widely used database was developed by IBM in the 1960s, called IMS (Information Management System). 
+                    This was a hierarchical database, which means the data was organized in tree-like structures, but it lacked flexibility<a href="https://www.ibm.com/history/information-management-system?">[1]</a>. 
+                    Then, in the 1970s, the relational model was developed by Edgar F. Codd. This model organized data into tables of rows and columns <a href="https://www.ibm.com/history/edgar-codd">[2]</a>. This is the foundation for SQL 
+                    (Structured Query Language), also made by IBM, as it is a tool that interacts with relational models through commands to insert rows, create tables, 
+                    run queries, etc <a href="https://en.wikipedia.org/wiki/SQL">[3]</a>. As time went on and the internet grew, so did the data, creating new approaches to handling data, such as NoSQL databases. Databases 
+                    and the models have changed to fit different needs, so understanding the models will help you understand why certain databases are chosen for specific 
+                    applications.
                     </p>
-                </details>
-                </div>
 
+                    <h3>The Three Types of Databases:</h3>
+
+                    <div class="imgContainer">
+                        <figure class="imgbox">
+                            <img class="typeDB" src="images/hierarchicalDB.jpg" alt="Hierarchical Database">
+                            <figcaption class="figcap">
+                                <h3>Hierarchical Database</h3>
+                                <p class="pInfo">The image above gives an idea of how a Hierarchical Database stores data, which is through parent nodes linked to child nodes. 
+                                    Parents can have multiple child nodes, but child nodes only have one parent. This model was used to manage inventory and billing for NASA's 
+                                    Apollo space program. However, this model became unpopular as data grew more complex because of the rigid tree structure, the difficulty of 
+                                    updating, and the difficulty of querying. <br>
+                                    <br> <a href="https://www.mongodb.com/resources/basics/databases/hierarchical-database" target="_blank">What is a Hierarchical Database?</a>
+                                </p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="imgbox">
+                            <img class="typeDB" src="images/relationalDB.jpg" alt="Relational Database">
+                            <figcaption class="figcap">
+                                <h3>Relational Database</h3>
+                                <p class="pInfo">A relational Database stores data into tables made up of rows and columns. The data can be stored on multiple tables and joined 
+                                    together. These tables are defined using primary keys (unique identifiers) and foreign keys (links to keys in other tables). Here in the image, 
+                                    we can see that the primary keys in Students is ID, in Courses it's ID, and in StudentCourses, the primary key is a combination (StudentID, 
+                                    CourseID). The foreign keys in StudentCourses would be the Student.ID since it references Students (ID) and Course.ID since it references 
+                                    Courses (ID). SQL helps interaction with relational databases to add, update, and delete rows more easily. These types of databases are still 
+                                    commonly used today by business and web systems because of their flexibility for structured data. <br> <br>
+                                    <a href="https://www.ibm.com/think/topics/relational-databases" target="_blank">What is a Relational Database?</a>
+                                </p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="imgbox">
+                            <img class="typeDB" src="images/NoSQL.jpg" alt="No SQL Database" >
+                            <figcaption class="figcap">
+                            <h3>No SQL Database</h3>
+                            <div id="noSQL" class="pInfo">
+                                    <p>
+                                        NoSQL databases were created to handle situations where relational tables are too rigid, such as with big data (millions or billions of records), 
+                                        unstructured data (JSON documents, logs, social media posts, etc), or rapidly changing data. The models come in different types, just like the 
+                                        image shows:
+                                    </p>
+
+                                <ul>
+                                        <li>Document databases like MongoDB store data in JSON-like documents.</li>
+                                        <li>Graph databases like Neo4j focus on relationships, used for social networks or recommendation systems. These models are flexible, 
+                                            scale easily, and work well with unstructured or massive amounts of data.
+                                        </li>
+                                        <li>Key-Value stores like Redis pair a unique key with a value, which allows for fast and direct key access due to its simplicity.</li>
+                                        <li>Column-oriented databases like Cassandra group data by columns instead of rows, making them great for big data.</li>
+                                    </ul>
+
+                                    <a href="https://www.geeksforgeeks.org/dbms/types-of-nosql-databases/" target="_blank">Types of NoSQL Databases</a>
+                            </div>
+
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+
+                    <div id="infoBoxes">
+                        <details>
+                        <summary>More resources used</summary>
+                        <p>
+                            <ul>
+                            <li><a href="https://www.quickbase.com/articles/timeline-of-database-history" target="_blank">Timeline of database History</a></li>
+                            <li><a href="https://www.geeksforgeeks.org/dbms/history-of-dbms/" target="_blank">History of DBMS</a></li>
+                            <li><a href="https://www.digitalocean.com/community/tutorials/understanding-relational-databases" target="_blank">Understanding Relational Databases</a></li>
+                            <li><a href="https://en.wikipedia.org/wiki/Hierarchical_database_model" target="_blank">Heirarchical Database Model</a></li>
+                            <li><a href="https://www.thinkautomation.com/histories/the-history-of-databases" target="_blank">The History of Databases</a></li>
+                        
+                            </ul>
+                        </p>
+                    </details>
+                    </div>
+                </div>
             </div>
 
             <footer>
