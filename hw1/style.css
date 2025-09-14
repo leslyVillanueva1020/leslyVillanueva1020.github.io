@@ -149,6 +149,10 @@ h3{
     padding: 1em;
 }
 
+#noSQL {
+    padding-top: 0.3em;
+}
+
 #infoBoxes {
     display: flex;
     justify-content: space-around;
