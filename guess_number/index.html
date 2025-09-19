@@ -12,10 +12,12 @@
             <h2>Guess a number between 1 and 99 in seven attempts!</h2>
         </header>
         <br>
+
         <div id="main">
           Enter a guess: 
           <input type="text" id="playerGuess" size="10">         
-          <button id="guessBtn"> Guess </button> <br>
+          <button id="guessBtn"> Guess </button> 
+          <br>
           <button id="resetBtn"> Play Again? </button> 
           <div id="feedback"></div>
           <div>Previous Guesses: 
@@ -24,11 +26,22 @@
           <div>You have 
             <span id="attempts"></span> attempts left.
           </div>
+          <br>
+          SCOREBOARD
+          <div id="scoreBoard">
+            <div id="wBox">
+              Wins: 
+              <span id="wins"></span>
+            </div>
 
-          <div>Wins: <span id="wins"></span></div>
-          <div>Losses: <span id="losses"></span></div>
+            <div id="lBox">
+              Losses: 
+              <span id="losses"></span>
+            </div>
+          </div>
+
         </div>
-        
+        <br>
 
         <script src="js/script.js"></script>
     </body>
