@@ -77,7 +77,6 @@ function checkGuess() {
         if(attempts == 7) {
             feedback.textContent = "Sorry, you lost!";
             feedback.style.color = "red";
-            attemptID.style.display = "none";
             losses++;
             console.log("Losses: " + losses);
             losing.textContent = losses;
