@@ -31,9 +31,16 @@ header{
     font-size: 0.5em;
 }
 
+#resetBtn{
+    margin-top: 2em;
+    border: 2px solid #7785ac;
+    padding: 0.5em;
+    font-size: 0.5em;
+}
+
 #feedback {
     background-color: rgb(255, 255, 238);
-    padding: 1.5em;
+    padding: 1em;
     margin: 1em;
 }
 
