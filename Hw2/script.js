@@ -1,6 +1,11 @@
 let scene = document.querySelector("#selectScene");
+let shirt = document.querySelector(".shirtOpt");
+let bottoms = document.querySelector("pantsOpt");
+let headwear = document.querySelector(".hat");
+let shoes = document.querySelector(".shoes")
 
 scene.addEventListener("click", changeScene);
+
 
 function changeScene() {
 

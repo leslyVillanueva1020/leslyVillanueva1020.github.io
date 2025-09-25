@@ -56,14 +56,13 @@ h4{
     background-repeat: no-repeat;
     min-height: 500px;
     padding: 1rem;
-    width: 100%;
 }
 
 #avatarContainer {
     position: relative;
     width: 400px;
     height: auto;
-    margin: 0 auto;
+    margin: 4em auto 0 auto;
 }
 
 #avatarContainer img{
