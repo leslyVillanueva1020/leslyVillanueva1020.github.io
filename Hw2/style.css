@@ -28,6 +28,22 @@ label{
     border:1px solid blue;
 }
 
+#clothesOptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clothing{
+    flex: 1 1 30%;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+h4{
+    margin-bottom: 0.3em;
+}
+
 #right {
     flex: 2;
     border: 1px solid red;
@@ -58,4 +74,16 @@ label{
 
 #avatarEars {
     z-index: 3;
+}
+
+#pantsImg{
+    z-index: 4;
+}
+
+#shirtImg {
+    z-index: 5;
+}
+
+#shoesImg{
+    z-index: 5;
 }
