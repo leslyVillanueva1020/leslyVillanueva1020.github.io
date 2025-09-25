@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="top">
+        <h1>Style Your Avatar</h1>
+        <h2>Pick colors, a scence, and accessories!</h2>
+    </div>
+    <br>
+
+    <div id="main">
+        <div id="left">
+            <h3>Control Pannel</h3>
+
+            <select id="selectScene">
+                <option>Scene<i class="fa-solid fa-caret-down"></i></option>
+                <option>Beach🏝️</option>
+                <option>City🌆</option>
+                <option>Forest🌲</option>
+            </select>
+            <br>
+            <br>
+
+            <label class="color">
+                Shirt Color: <input type="text" id="shirtColor" size="5">
+            </label>
+
+            <label class="color">
+                Pants Color: <input type="text" id="pantsColor" size="5">
+            </label>
+
+            <label class="color">
+                Hair Color: <input type="text" id="hairColor" size="5">
+            </label>
+
+            <label class="color">
+                Shoe Color: <input type="text" id="shoeColor" size="5">
+            </label>
+
+            <br>
+
+            <h4>Acessories:</h4>
+
+            <label>
+                <input type="checkbox" id="sunglasses"> Sunglasses
+            </label>
+
+            <label>
+                <input type="checkbox" id="scarf"> Scarf
+            </label>
+
+            <label>
+                <input type="checkbox" id="bag"> Bag
+            </label>
+
+            <br> <br>
+
+            <button id="shfflBtn">Shuffle Outfit</button>
+            <br> <br>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <div id="right">
+            <h3>Preview Panel</h3>
+
+            <div id="preview">
+                <img id="sceneImg" src="" alt="">
+
+                <div id="avatarContainer">
+
+                </div>
+
+                <img id="accSunglasses" src="" alt="Sunglasses accessory">
+                <img id="accScarf" src="" alt="Scarf accessory">
+                <img id="accBag" src="" alt="Bag accessory">
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

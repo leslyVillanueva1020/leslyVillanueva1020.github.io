@@ -1,0 +1,37 @@
+body{
+    background-image: url(imgs/bckgnd.jpg);
+}
+
+#top{
+    background-color: beige;
+    text-align: center;
+}
+
+#main{
+    display: flex;
+    padding: 1em;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid red;
+    text-align: center;
+}
+
+label{
+    display: block;
+}
+
+.color{
+    margin: 0.5em 0;
+}
+
+
+#left {
+    flex: 1;
+    min-width:100px;
+    border:1px solid blue;
+}
+
+#right {
+    flex: 2;
+    border: 1px solid red;
+}
