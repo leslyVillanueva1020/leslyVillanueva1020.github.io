@@ -29,21 +29,42 @@
             <br>
             <br>
 
-            <label class="color">
-                Shirt Color: <input type="text" id="shirtColor" size="5">
-            </label>
+            <h4>Clothing</h4>
+            <div class="clothing">
+                <h5>Shirt Type:</h5>
 
-            <label class="color">
-                Pants Color: <input type="text" id="pantsColor" size="5">
-            </label>
+                <label class="shirtOpt">
+                    <input type="radio" name="shirt" value="tShirt"> T-shirt
+                </label>
 
-            <label class="color">
-                Hair Color: <input type="text" id="hairColor" size="5">
-            </label>
+                <label class="shirtOpt">
+                    <input type="radio" name="shirt" value="hoodie"> Hoodie
+                </label>
+            </div>
 
-            <label class="color">
-                Shoe Color: <input type="text" id="shoeColor" size="5">
-            </label>
+            <div class="clothing">
+                <h5>Bottoms: </h5>
+
+                <label class="pantsOpt">
+                    <input type="radio" name="pants" value="jeans"> Jeans
+                </label>
+
+                <label class="pantsOpt">
+                    <input type="radio" name="pants" vlaue="skirt"> Skirt
+                </label>
+            </div>
+
+            <div class="clothing">
+                <h5>Headwear: </h5>
+
+                <label class="hat">
+                    <input type="radio" name="hat" value="beanie"> Beanie
+                </label>
+
+                <label class="hat">
+                    <input type="radio" name="hat" value="headBand"> Headband
+                </label>
+            </div>
 
             <br>
 
@@ -72,15 +93,16 @@
             <h3>Preview Panel</h3>
 
             <div id="preview">
-                <img id="sceneImg" src="" alt="">
 
                 <div id="avatarContainer">
-
+                    <img id="avatarBase" src="imgs/charBody.png" alt="Avatar body">
+                    <img id="avatarHair" src="imgs/hair.png" alt="Hair">
+                    <img id="avatarEars" src="imgs/ears.png" alt="ears">
                 </div>
 
-                <img id="accSunglasses" src="" alt="Sunglasses accessory">
-                <img id="accScarf" src="" alt="Scarf accessory">
-                <img id="accBag" src="" alt="Bag accessory">
+                <img id="accSunglasses" src="" alt="Sunglasses accessory" style="display: none;">
+                <img id="accScarf" src="" alt="Scarf accessory" style="display: none;">
+                <img id="accBag" src="" alt="Bag accessory" style="display: none;">
             </div>
 
         </div>
