@@ -1,5 +1,5 @@
 body{
-    background-image: url(imgs/bckgnd.jpg);
+    background-image: url("imgs/bckgnd.jpg");
 }
 
 #top{
@@ -49,9 +49,19 @@ h4{
     border: 1px solid red;
 }
 
+#preview {
+    background-image: url("imgs/bedroom.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    padding: 1rem;
+    width: 100%;
+}
+
 #avatarContainer {
     position: relative;
-    width: 500px;
+    width: 400px;
     height: auto;
     margin: 0 auto;
 }
@@ -84,6 +94,6 @@ h4{
     z-index: 5;
 }
 
-#shoesImg{
+#shoesImg {
     z-index: 5;
 }
