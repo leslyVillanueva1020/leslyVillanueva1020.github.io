@@ -96,3 +96,18 @@ h4{
 #shoesImg {
     z-index: 5;
 }
+
+#hatImg {
+    display: none;
+    z-index: 4;
+}
+
+#accSunglasses {
+    display: none;
+    z-index: 3;
+}
+
+#accBag {
+    display: none;
+    z-index: 3;
+}

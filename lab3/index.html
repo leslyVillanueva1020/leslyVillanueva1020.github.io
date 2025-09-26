@@ -2,58 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3: JS Quiz</title>
-    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <meta name="viewport" content="width=1, initial-scale=1.0">
 </head>
 <body>
+    <h1> CSS Quiz </h1>
+    <script src = "https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+    <div> 1. What is the most populous Captial of any state in the USA? </div>
+    <div id = "q1Options"></div>
+    <div id="afterQuiz"></div>
+
+    <br>
+
+    <div> 2. What is the most famous Captial of any state in the USA? </div>
+    <label>
+        Popular options:
+        <select id="popularCapt">
+            <option>Boston</option>
+            <option>Nashville</option>
+            <option>Detroit</option>
+            <option>Washington D.C</option>
+        </select>
+    </label>
+    <div id="afterQuiz2"></div>
+
+    <br>
+
+    <div> 3. What is the capital of Wyoming? </div>
+    <label> Enter Capital!
+        <input type="text" id="textInput" placeholder = "capital">
+    </label>
+    <div id="afterQuiz3"></div>
     
-    <h1>CSS Quiz</h1>
-
-    <div>1. What CSS property changes the the text color?</div>
-
-    <label>
-        <input type="radio" name="q1" value="Text-Color">Text-Color
-    </label>
-
-    <label>
-        <input type="radio" name="q1" value="Font-Color">Font-Color
-    </label>
-
-    <label>
-        <input type="radio" name="q1" value="color">color
-    </label>
 
     <br>
 
-    <div>2. What CSS property changes the the text color?</div>
-
+    <div>4. How many capitals are there in the US? (Including Federal?) </div>
     <label>
-        <input type="checkbox" id="q2a" value="Text-Color">Text-Color
+        Number of Captials:
+        <input id="numCapt" type="number" min="1" max="100" step="1">
     </label>
-
-    <label>
-        <input type="checkbox" id="q2b" value="Font-Color">Font-Color
-    </label>
-
-    <label>
-        <input type="checkbox" id="q2c" value="color">color
-    </label>
-
-    <br>
-
-    <div>3. What CSS property changes the the text color?</div>
-
-    <div id="q3Options"></div>
-
-    <br>
-
-    <div>4. What CSS property changes the text color?</div>
-    <input type="text" id="q4">
+    <div id="afterQuiz4"></div>
 
 
-    <button>Submit Quiz</button>
-
-    <script src="js/script.js"></script>
+    <button> Submit Quiz </button>
+    <script src = "script.js"></script>
 </body>
 </html>
