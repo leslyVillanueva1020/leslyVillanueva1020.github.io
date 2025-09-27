@@ -1,0 +1,135 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    background-color: #fef1bc;
+    text-align: center;
+    font-family: "Nunito" , serif;
+    color: #5f1419;
+}
+
+h1{
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+h2{
+    font-family: "Caprasimo", serif;
+    font-weight: 200;
+    padding: 0.5em;
+}
+
+#allSections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+    padding: 1em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section {
+    background-color: #745236;
+    border-radius: 2em;
+    padding: 2em 1em;
+    color: white;
+    margin: 0 auto;
+    min-height: 50px;
+    max-width: 20em;
+}
+
+.question {
+    color: #745236;
+    background-color: beige;
+    padding: 0.4em 1em;
+    border-radius: 2em;
+    margin-bottom: 10px;
+    width:fit-content;
+    margin: 0 auto;
+}
+
+.response {
+    padding: 1em;
+}
+
+#q1Options label, #q5Options label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1em;
+}
+
+#afterQuiz, #afterQuiz2, #afterQuiz3, #afterQuiz4, #afterQuiz5 {
+    background-color: beige;
+}
+
+#afterQuiz{
+    margin-top: 0.5em;
+}
+
+#afterQuiz2{
+    margin-top: 2.2em;
+}
+
+#q3response {
+    padding-top: 2.4em;
+}
+
+#afterQuiz3{
+    margin-top: 2em;
+}
+
+#afterQuiz4{
+    margin-top: 2.2em;
+}
+
+#afterQuiz5 {
+    margin-top: 1em;
+}
+
+#q1Img{
+    display: none;
+    width: 1em;
+    height: auto;
+}
+
+#q2Img{
+    display: none;
+    width: 1em;
+    height: auto;
+}
+
+#q3Img{
+    display: none;
+    width: 1em;
+    height: auto;
+}
+
+#q4Img{
+    display: none;
+    width: 1em;
+    height: auto;
+}
+
+#q5Img{
+    display: none;
+    width: 1em;
+    height: auto;
+}
+
+button {
+    background-color: #6b4b4c;
+    color: #c8c58b;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1em;
+    padding: 0.75em 2em;
+}
+
+button:hover {
+  background-color: #b25b5f;
+}
