@@ -97,6 +97,9 @@ function changeShoe(){
     if(document.querySelector("#shoesImg").src == "imgs/slippers.png"){
         shoesImg.style.zIndex = 5;
     }
+    else{
+        shoesImg.style.zIndex = 3;
+    }
 }
 
 function addAccessory() {
@@ -143,6 +146,7 @@ function resetGame() {
 
     sunglasses.checked = false;
     bag.checked = false;
+    shoesImg.style.zIndex = 5;
 }
 
 function shuffleOutfit() {
