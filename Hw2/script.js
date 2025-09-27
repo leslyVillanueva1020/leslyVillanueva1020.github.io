@@ -170,7 +170,13 @@ function shuffleOutfit() {
         }
         else if (i == 2){
             document.querySelector("#shoesImg").src = choice;
-        }
+            if(document.querySelector("#shoesImg").src == "imgs/slippers.png"){
+                shoesImg.style.zIndex = 5;
+            }
+            else{
+                shoesImg.style.zIndex = 3;
+            }
+    }
         else if (i == 3){
             document.querySelector("#hatImg").src = choice;
             document.querySelector("#hatImg").style.display = "block";
