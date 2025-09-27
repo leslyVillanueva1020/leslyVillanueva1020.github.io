@@ -94,8 +94,8 @@ function changeShoe(){
         shoesImg.src = "imgs/boots.png";
     }
 
-    if(document.querySelector("#pantsImg").src != "imgs/pjPants.png"){
-        shoesImg.style.zIndex = 3;
+    if(document.querySelector("#shoesImg").src == "imgs/slippers.png"){
+        shoesImg.style.zIndex = 5;
     }
 }
 
