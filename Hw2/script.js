@@ -142,6 +142,7 @@ function resetGame() {
     boot.checked = false;
 
     sunglasses.checked = false;
+    bag.checked = false;
 }
 
 function shuffleOutfit() {
