@@ -133,3 +133,15 @@ button {
 button:hover {
   background-color: #b25b5f;
 }
+
+#afterSubmit {
+    background-color: #c8c58b;
+    display: none;
+    width:fit-content;
+    padding-top: 1em;
+    padding-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0 auto;
+    border-radius: 1em;
+}

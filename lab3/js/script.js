@@ -179,4 +179,6 @@ function gradeQuiz() {
     times += 1;
     localStorage.setItem("quizTimesTaken", times);
     document.querySelector("#timesTaken").textContent = "Times Taken: " + times;
+
+    document.querySelector("#afterSubmit").style.display = "block";
 }
