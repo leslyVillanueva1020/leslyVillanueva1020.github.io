@@ -3,17 +3,19 @@ body{
 }
 
 #top{
-    background-color: beige;
+    background-color: #E1E9C9;
     text-align: center;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
 
 #main{
     display: flex;
-    padding: 1em;
+    padding: 2em;
     width: 85%;
     margin: 0 auto;
-    border: 1px solid red;
     text-align: center;
+    background-color: #E1E9C9;
 }
 
 label{
@@ -25,28 +27,48 @@ label{
 #left {
     flex: 1;
     min-width:100px;
-    border:1px solid blue;
+    background-color: #f5abb8;
 }
 
 #clothesOptions {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .clothing{
     flex: 1 1 30%;
     padding: 0.75rem;
     text-align: left;
+    border: 2px solid #b2dae7;
+    border-radius: 3%;
+    background-color: #b2dae7;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h5{
+    margin-top: 0.4em;
 }
 
 h4{
     margin-bottom: 0.3em;
 }
 
+#checkAcc {
+    background-color: #faf9cb;
+    border: 2px solid #faf9cb;
+    border-radius: 3%;
+    padding: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
 #right {
     flex: 2;
-    border: 1px solid red;
+    background-color: #F1BFBA;
 }
 
 #preview {
@@ -56,6 +78,7 @@ h4{
     background-repeat: no-repeat;
     min-height: 500px;
     padding: 1rem;
+    margin-bottom: 1em;;
 }
 
 #avatarContainer {
