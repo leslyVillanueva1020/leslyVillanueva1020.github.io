@@ -1,5 +1,6 @@
 body{
     background-image: url("imgs/bckgnd.jpg");
+    font-family: "The Girl Next Door", cursive;
 }
 
 #top{
@@ -7,6 +8,19 @@ body{
     text-align: center;
     padding-top: 0.4em;
     padding-bottom: 0.4em;
+    font-family: "Swanky and Moo Moo", serif;
+    font-size: 2em;
+}
+
+h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h2{
+    margin-top: 0;
+    font-size: 1em;
+    margin-bottom: 0;
 }
 
 #main{
@@ -28,6 +42,11 @@ label{
     flex: 1;
     min-width:100px;
     background-color: #f5abb8;
+}
+
+#selectScene{
+    font-family: "The Girl Next Door", Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 #clothesOptions {
@@ -133,4 +152,22 @@ h4{
 #accBag {
     display: none;
     z-index: 6;
+}
+
+button{
+    background-color: lightgrey;
+    border:none;
+    border-radius: 1em;
+    padding: 1em;
+    cursor:pointer;
+    font-family: "The Girl Next Door", sans-serif;
+    font-weight: 900;
+}
+
+button:hover {
+  background-color: white;
+}
+
+#resetBtn{
+    margin-bottom: 1em;
 }
