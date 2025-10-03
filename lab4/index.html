@@ -5,47 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4: Sign Up Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 
 <body>
-    <h1> Sign Up Form </h1>
 
-    <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br>
-        Last Name: <input type="text"><br>
-        Email: <input type="text"><br>
-        Phone Number:<input type="text"><br><br>
+    <div id="signupBody" class="col-sm-5 col-md-6 col-lg-7 col-xl-8">
+        <h1>Sign Up Form</h1>
 
-        Zip Code: <input id="zip" type="text"> 
-        <div id="errMsg"></div>
+        <fieldset>
+            <legend>Sign Up</legend>
 
-        <br>
-        City: <span id="city"></span>
-        <br>
-        Latitude: <span id="lat"></span>
-        <br>
-        Longitude: <span id="longit"></span>
-        <br><br>
-        State: 
-        <select id="state">
+            <div class="row g-1 align-items-center">
+                <!-- Row 1; 2 col left and right -->
+                <label class="col-12 col-md-2 col-form-label" for="firstName">First Name:</label>
+                <div class="col-12 col-md-10">
+                    <input type="text" id="firstName" class="form-control">
+                </div>
 
-        </select><br>
-        Select a County: <select id="county"></select><br>
+                <label class="col-12 col-md-2 col-form-label" for="lastName">Last Name:</label>
+                <div class="col-12 col-md-10">
+                    <input type="text" id="lastName" class="form-control">
+                </div>
 
-        Desired Username: <input type="text" id="username"> 
-        <div id="nameMsg"></div>
-        <div id="nameValidate"></div>
-        <br>
-        Password: <input type="password" id="pass"> 
-        <div id="passMsg"></div>
-        <div id="passValidate"></div>
-        <br>
-        Type Password Again: <input type="password" id="pass2">
-        <div id="pass2Validate"></div>
-        <br>
-        <input type="submit" value="Sign up!" id="signUp">
-    </fieldset>
+                <label class="col-12 col-md-2 col-form-label" for="email">Email:</label>
+                <div class="col-12 col-md-10">
+                    <input type="text" id="email" class="form-control">
+                </div>
+
+                <label class="col-12 col-md-2 col-form-label" for="phone">Phone Number:</label>
+                <div class="col-12 col-md-10">
+                    <input type="text" id="phone" class="form-control">
+                </div>
+
+                <div class="col-12 col-md-2 col-form-label">
+                    <label for="zip">Zip Code:</label>
+                    <div id="errMsg"></div>
+                </div>
+                <div class="col-12 col-md-10">
+                    <input id="zip" type="text"> 
+                </div>
+            </div>
+
+            <!-- Row 2 zipcode -->
+
+            <br>
+            City: <span id="city"></span>
+            <br>
+            Latitude: <span id="lat"></span>
+            <br>
+            Longitude: <span id="longit"></span>
+            <br><br>
+            State: 
+            <select id="state">
+
+            </select><br>
+            Select a County: <select id="county"></select><br>
+
+            Desired Username: <input type="text" id="username"> 
+            <div id="nameMsg"></div>
+            <div id="nameValidate"></div>
+            <br>
+            Password: <input type="password" id="pass"> 
+            <div id="passMsg"></div>
+            <div id="passValidate"></div>
+            <br>
+            Type Password Again: <input type="password" id="pass2">
+            <div id="pass2Validate"></div>
+            <br>
+            <input type="submit" value="Sign up!" id="signUp">
+        </fieldset>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

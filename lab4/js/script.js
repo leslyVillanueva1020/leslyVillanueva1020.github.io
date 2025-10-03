@@ -22,6 +22,7 @@ async function displayCity() {
                 document.querySelector("#city").textContent = data.city;
                 document.querySelector("#lat").textContent = data.latitude;
                 document.querySelector("#longit").textContent = data.longitude;
+                document.querySelector("#errMsg").textContent = "";
             }
             else{
                 document.querySelector("#errMsg").textContent = "Zip code not found!";
@@ -163,16 +164,25 @@ function validateSubmit(){
         validMsg.textContent = "At least 3 characters needed.";
         validMsg.style.color = "red";
     }
+    else{
+        validMsg.textContent = "";
+    }
 
     let passMsg = document.querySelector("#passValidate");
     if(pass.length < 6){
         passMsg.textContent = "Password must be at least 6 characters."
         passMsg.style.color = "red";
     }
+    else {
+        passMsg.textContent = "";
+    }
 
     let equalPassMsg = document.querySelector("#pass2Validate");
     if(pass != pass2){
         equalPassMsg.textContent = "Retype Password. Passwords don't match.";
         equalPassMsg.style.color = "red";
+    }
+    else{
+        equalPassMsg.textContent = "";
     }
 }
