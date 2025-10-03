@@ -3,7 +3,9 @@ let state2L;
 //Event Listeners
 document.querySelector("#zip").addEventListener("change", displayCity);
 document.querySelector("#state").addEventListener("change", updateVal);
-document.querySelector("#username").addEventListener("change", availableName);
+document.querySelector("#username").addEventListener("input", availableName); //input updates as they type
+document.querySelector("#pass").addEventListener("click", passMsg);
+document.querySelector("#signUp").addEventListener("click", validateSubmit);
 
 displayStates();
 
@@ -134,6 +136,28 @@ async function availableName() {
         } catch(parseError){
             console.log("JSON Parsing error " + parseError);
         }
+    } catch(error) {
+        console.log("Network error " + error);
+    }
+}
+
+async function passMsg(){
+    let url = "https://csumb.space/api/suggestedPassword.php?length=8";
+
+    try{
+        let response = await fetch(url);
+
+        try{
+            let data = await response.json();
+            console.log(data);
+
+            document.querySelector("#passMsg").textContent = "Suggested Password: " + data.password;
+            document.querySelector("#passMsg").style.color = "green";
+
+        } catch(parseError){
+            console.log("JSON Parsing error " + parseError);
+        }
+
     } catch(error) {
         console.log("Network error " + error);
     }
