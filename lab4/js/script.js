@@ -101,19 +101,8 @@ async function displayCounties(stateAbbr) {
 }
 
 async function availableName() {
-    let username = document.querySelector("#username").value.trim(); //trim removes extra spaces
+    let username = document.querySelector("#username").value.trim();
     let userMsg = document.querySelector("#nameMsg");
-
-    if(username.length === 0) {
-        userMsg.textContent = "";
-        return;
-    }
-    
-    if(username.length < 3){
-        userMsg.textContent = "At least 3 characters needed.";
-        userMsg.style.color = "red";
-        return;
-    }
 
     let url = "https://csumb.space/api/usernamesAPI.php?username=" + username;
 
@@ -160,5 +149,30 @@ async function passMsg(){
 
     } catch(error) {
         console.log("Network error " + error);
+    }
+}
+
+function validateSubmit(){
+    let username = document.querySelector("#username").value.trim();
+    let pass = document.querySelector("#pass").value;
+    let pass2 = document.querySelector("#pass2").value;
+
+
+    let validMsg = document.querySelector("#nameValidate");
+    if(username.length < 3){
+        validMsg.textContent = "At least 3 characters needed.";
+        validMsg.style.color = "red";
+    }
+
+    let passMsg = document.querySelector("#passValidate");
+    if(pass.length < 6){
+        passMsg.textContent = "Password must be at least 6 characters."
+        passMsg.style.color = "red";
+    }
+
+    let equalPassMsg = document.querySelector("#pass2Validate");
+    if(pass != pass2){
+        equalPassMsg.textContent = "Retype Password. Passwords don't match.";
+        equalPassMsg.style.color = "red";
     }
 }
