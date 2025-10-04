@@ -5,7 +5,7 @@ document.querySelector("#zip").addEventListener("change", displayCity);
 document.querySelector("#state").addEventListener("change", updateVal);
 document.querySelector("#username").addEventListener("input", availableName); //input updates as they type
 document.querySelector("#pass").addEventListener("click", passMsg);
-document.querySelector("#signUp").addEventListener("click", validateSubmit);
+document.querySelector("#signupForm").addEventListener("submit", validateForm);
 
 displayStates();
 
@@ -153,7 +153,9 @@ async function passMsg(){
     }
 }
 
-function validateSubmit(){
+function validateForm(e){
+    let isValid = true;
+    
     let username = document.querySelector("#username").value.trim();
     let pass = document.querySelector("#pass").value;
     let pass2 = document.querySelector("#pass2").value;
@@ -163,6 +165,7 @@ function validateSubmit(){
     if(username.length < 3){
         validMsg.textContent = "At least 3 characters needed.";
         validMsg.style.color = "red";
+        isValid = false;
     }
     else{
         validMsg.textContent = "";
@@ -172,6 +175,7 @@ function validateSubmit(){
     if(pass.length < 6){
         passMsg.textContent = "Password must be at least 6 characters."
         passMsg.style.color = "red";
+        isValid = false;
     }
     else {
         passMsg.textContent = "";
@@ -181,8 +185,11 @@ function validateSubmit(){
     if(pass != pass2){
         equalPassMsg.textContent = "Retype Password. Passwords don't match.";
         equalPassMsg.style.color = "red";
+        isValid = false;
     }
     else{
         equalPassMsg.textContent = "";
     }
+
+    if(!isValid) e.preventDefault();
 }

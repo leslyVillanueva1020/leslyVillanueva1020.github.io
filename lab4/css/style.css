@@ -1,6 +1,7 @@
 html, body { 
     height: 100%; 
     margin: 0;
+    font-family: "The Girl Next Door", sans-serif;
 }
 
 body {
@@ -8,21 +9,28 @@ body {
   display: flex;          
   align-items: flex-start;     
   justify-content: center;    
-  background-color: #237b8d !important;
+  background-image: url('../imgs/bearBg.jpg');
+  background-size: cover;
   padding-top: 2em;
   padding-bottom: 1em;
 }
 
 
 #signupBody {
-  background-color: #F0F3F5;
-  border-radius: 3em;
-  padding: 2em 1em;
-  text-align: left;
+    font-family: "The Girl Next Door", sans-serif;
+    background-color: rgba(173, 141, 109, 0.5);
+    border-radius: 3em;
+    padding: 2em 1em;
+    text-align: left;
 
-  height: 90vh;
-  overflow-y: auto;
-  box-sizing: border-box;
+    height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+
+#signupBody h1{
+    font-weight: 900;
 }
 
 #signupBody legend {
@@ -39,18 +47,19 @@ body {
 
 #city, #lat, #longit {
     display: block;
-    width: 100%;
+    width: 30%;
     min-height: 44px;
     padding: 0.3em 0.3em;
-    border: 2px solid #d7e1e6;
-    border-radius: 50px;
-    background: #f7fbfc;
-}
+    color: #506d4a;
+    /* border: 2px solid #d7e1e6;
+    border-radius: 30px; */
+    /* background: #f7fbfc; */
+} 
 
 #signUp{
     display: inline-block;
     width: 50%;
-    background-color: #237b8d;
+    background-color: #582F0E;
     border: none;
     color: white;
     border-radius: 50px;
